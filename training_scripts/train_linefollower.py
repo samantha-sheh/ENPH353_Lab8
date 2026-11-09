@@ -14,7 +14,7 @@ def main():
     observation_space = env.observation_space  # Fetch obs space; discrete states that robot sees
     action_space = env.action_space  # Fetch action space; available actions
 
-    epsilon = 0.8  # Exploration rate
+    epsilon = 0.8  # Exploration rate, takes random action with probability epsilon
     epsilon_decay = 0.99  # Decay rate
 
     q_table = np.zeros((observation_space.n, action_space.n))  # Q table of 0s w/ obs rows and action cols 
